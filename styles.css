@@ -465,9 +465,11 @@ blockquote {
 
 .material-card {
     background-color: var(--bg-white);
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     border-radius: 1rem;
     box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
 }
 
 .material-icon {
@@ -488,7 +490,18 @@ blockquote {
 }
 
 .material-demo {
-    margin-top: 1.5rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.material-demo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .demo-placeholder {
